@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+
+
+  </head>
+  <body>
+    <svg width="100%" height="100%" viewBox="0 0 95 50" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <clipPath id="cut-off-bottom">
+          <rect y="2.5" x="0" height="2.5" width="10"></rect>
+        </clipPath>
+      </defs>
+      <svg x="0" y="0" viewBox="0 0 20 10" width="100" height="50" style="opacity:0.5">
+        <!-- top bun -->
+        <ellipse  cx="5" cy="5"  rx="2" ry="1" clip-path="url(#cut-off-bottom)" />
+        <!-- patty -->
+        <rect x="2.5" y="5.25" rx="0.25" ry="0.25" width="5" height="0.5" stroke-width="0.25" ></rect>
+        <!-- Going to try clipping this instead of complete path-->
+        <rect x="2.5" y="6" rx="0.25" ry="0.25" width="5" height="0.75" stroke-width="0.25" ></rect>
+        <!-- <path d="M95,318 C95,439 217,448 321,258 Z" /> -->
+      </svg>
+    </svg>
+  </body>
+</html>
