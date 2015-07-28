@@ -8,24 +8,27 @@
     <svg width="100%" height="100%" viewBox="0 0 500 500" style="opacity:0.5" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <clipPath id="cut-off-bottom">
-          <rect y="0" x="0" height="50" width="500"></rect>
+          <rect y="0" x="0" height="75" width="500"></rect>
         </clipPath>
+        <mask id="cut-off-top">
+          <rect x="0" y="0" width="100%" height="100%" fill="white"></rect>
+          <rect y="135" x="0" height="50" width="500" fill="black"></rect>
+          <path d="M-100,91 C268,248 1,244 242,92 Z" fill="black" />
+        </mask>
         <mask id="mask">
           <rect x="0" y="0" width="100%" height="100%" fill="white"></rect>
-          <!-- <rect x="0" y="40" width="200" height="200" fill="black"></rect> -->
-          <path d="M187,21 C165,138 285,116 223,62 Z" fill="black" />
-          <path d="M240,70 C200,148 360,146 360,8 Z" fill="black" />
+          <path d="M187,61 C165,178 285,156 223,92 Z" fill="black" />
+          <path d="M240,110 C200,188 360,186 360,48 Z" fill="black" />
         </mask>
       </defs>
 
         <!-- top bun -->
         <ellipse  cx="200" cy="100"  rx="200" ry="100"  clip-path="url(#cut-off-bottom)" />
         <!-- patty -->
-        <rect x="25" y="55" rx="10"  width="350" height="25" stroke-width="0.25" ></rect>
+        <rect x="10" y="85" rx="10"  width="380" height="25" stroke-width="0.25" ></rect>
         <!-- Going to try clipping this instead of complete path-->
-            <!-- -->
-        <rect x="25" y="90" rx="10" ry="25" width="350" height="50" stroke-width="0.25" mask="url(#mask)"></rect>
-    
+        <rect x="10" y="125" rx="10" ry="25" width="380" height="50" stroke-width="0.25" mask="url(#mask)"></rect>
+        <rect x="5" y="165" rx="10" ry="25" width="390" height="50" stroke-width="0.25" mask="url(#cut-off-top)"></rect>
     </svg>
   </body>
 </html>
